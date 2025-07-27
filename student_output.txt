@@ -1,0 +1,91 @@
+[?2004l
+🎓 Welcome to the Student Record Manager!
+📋 MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 2
+
+📚 All Students:
+
+📋 MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 1
+Enter student name: Lisa
+Enter student age: 22
+Enter student major: Computer Science
+✅ Student 'Lisa' added successfully.
+
+📋 MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 2
+
+📚 All Students:
+(1, 'Lisa', 22, 'Computer Science')
+
+📋 MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 1
+Enter student name: Zn andi
+Enter student age: 22
+Enter student major: Computer Science
+✅ Student 'Zandi' added successfully.
+
+📋 MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 3
+Enter the ID of the student to update: 2
+Leave a field blank if you don't want to update it.
+New name: Zaj ndile
+New age: 23
+New major: Computer Science
+🔁 Student ID 2 updated.
+
+�� MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 4
+Enter the ID of the student to delete: 1
+❌ Student ID 1 deleted.
+
+� MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 2
+
+📚 All Students:
+(2, 'Zandile', 23, 'Computer Science')
+
+📋 MENU
+1. Add Student
+2. View Students
+3. Update Student
+4. Delete Student
+5. Exit
+Choose an option (1-5): 5
+👋 Goodbye!
+[?2004h
