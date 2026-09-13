@@ -1,37 +1,48 @@
-# Relational Database CRUD App (Python + SQLite)
+# Student Record Manager
 
-This is a lightweight, beginner-friendly command-line application that performs full CRUD (Create, Read, Update, Delete) operations on a student database using Python and SQLite.
-It was designed to demonstrate foundational backend programming concepts such as database integration, user input handling, and dynamic data updates.
+A Python and SQLite application demonstrating relational persistence, parameterised SQL, validation and complete CRUD operations through a command-line interface.
 
-## Files
-- `student_crud.py`: The main Python script
-- `students.db`: The SQLite database file
-- `student_output.txt`: Example output from the terminal
+## Engineering highlights
 
-## Features
-- **Add Student** – Capture and store student name, age, and major  
-- **View Students** – Display all records in a clean format  
-- **Update Student** – Modify any student’s information dynamically  
-- **Delete Student** – Remove records by ID  
-- **Persistent Storage** – All data is stored in a local SQLite `.db` file
+- Repository layer separates persistence from user interaction
+- Parameterised queries protect SQL statements from input injection
+- Database constraints and validation protect data integrity
+- Context-managed transactions commit changes or roll back failures
+- Dependency injection enables isolated in-memory tests
+- Clear errors cover invalid input and missing records
 
-## Technologies Used
+## Architecture
 
-- **Python 3**
-- **SQLite (built-in)**
-- **Command-line interface (CLI)**
+```mermaid
+flowchart LR
+    User[CLI user] --> Menu[Input and output]
+    Menu --> Repository[Student repository]
+    Repository --> SQLite[(SQLite database)]
+    Tests[Unit tests] --> Repository
+```
 
-## How to Run the Project
+## Run locally
 
-1. **Clone or download** the repository
-2. Make sure you have **Python 3** installed
-3. Open a terminal, navigate to the project folder
-4. Run:
+Requires Python 3.10 or newer and no external packages.
 
 ```bash
 python student_crud.py
+```
 
+The application creates `students.db` locally. Generated databases are excluded from version control.
 
-Created By
-Zandile Dladla
-Aspiring Software Engineer
+## Run tests
+
+```bash
+python -m unittest -v
+```
+
+Tests use a fresh in-memory database and cover CRUD, validation and missing records.
+
+## Scope
+
+This is intentionally a focused CLI project. A production version would add authentication, schema migrations, structured logging and an API or web interface.
+
+## Author
+
+Zandile Dladla · [Portfolio](https://zandiledladla.github.io) · [GitHub](https://github.com/zandiledladla)
